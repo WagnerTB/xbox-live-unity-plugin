@@ -7,7 +7,7 @@ namespace AOT
     using global::System;
 
     [AttributeUsage(AttributeTargets.Method)]
-    public class MonoPInvokeCallbackAttribute : Attribute
+    internal class MonoPInvokeCallbackAttribute : Attribute
     {
         private Type type;
         public MonoPInvokeCallbackAttribute(Type t) { type = t; }
